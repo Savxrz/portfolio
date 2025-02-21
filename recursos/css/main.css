@@ -1,0 +1,417 @@
+/* Fuentes */
+:root {
+    --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Raleway",  sans-serif;
+    --menuList-font: "Poppins",  sans-serif;
+}
+
+/* Estilos generales */
+html, body{
+    background-color: #0e0e10;
+    color: white;
+    overflow-x: hidden; 
+
+}
+
+/* Estilos del fondo */
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.video-container {
+    position: relative; 
+    width: 100vw;
+    height: 100vh; 
+    overflow: hidden;
+}
+
+/* Estilos del nav */
+
+.navbar{
+    background-color: transparent;
+    transition: background 0.6s ease-out, backdrop-filter 0.6s ease-out;
+}
+
+/* Estilo cuando se aplica el desenfoque */
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.nav-link{
+    font-weight: 100;
+    letter-spacing: 4px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+}
+
+
+.nav-link:after{
+    content: "";
+    position: absolute;
+    background-color: #23a46c;
+    width: 0;
+    height: 2.5px;
+    bottom: -2px;
+    left: 0;
+    transition: 0.3s;
+}
+.nav-link:hover{
+    color: #1d7851;
+   
+}
+.nav-link:hover:after{
+    width: 40%;
+}
+
+
+/* Estilos del main */
+
+.main h3 {
+    font-size:4.4rem;
+    font-weight: 700;
+    color: #23a46c;
+}
+
+.main small {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+/* Estilos de escritura */
+
+#typed-text {
+    border-right: 3px solid white;
+    padding-right: 5px;
+    font-weight: lighter;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* Estilos del boton */
+.bt1 {
+    position: relative;
+    height: 55px;
+    width: 128px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: 2px solid #23a46c;
+    font-weight: lighter;
+    font-size: 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.4s ease;
+    z-index: 1;
+}
+
+/* Se crea la animación del fondo */
+.bt1 {
+    position: relative;
+    display: inline-block;
+    height: 55px;
+    width: 128px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #23a46c;
+    font-weight: lighter;
+    font-size: 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    z-index: 1;
+}
+
+/* Capa animada */
+.bt1 {
+    position: relative;
+    display: inline-block;
+    height: 55px;
+    width: 128px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #23a46c;
+    font-weight: lighter;
+    font-size: 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    z-index: 1;
+}
+
+/* Capa animada */
+.main .bt1 {
+    height: 55px;
+    width: 128px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #23a46c;
+    font-weight: lighter;
+}
+
+.main .bt1:hover {
+    background-color: #23a46c;
+    transition: 0.5s;
+}
+
+
+.about img{
+    -webkit-box-shadow: -3px 14px 185px -82px rgba(255,255,255,1);
+    -moz-box-shadow: -3px 14px 185px -82px rgba(255,255,255,1);
+    box-shadow: -3px 14px 185px -82px rgba(255,255,255,1);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+.sub {
+    color: #23a46c;
+    font-weight: light;
+    letter-spacing: 4px;
+}
+
+
+
+.progress {
+    background-color: whitesmoke;
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 30px;
+    width: 100%;
+
+    -webkit-box-shadow: inset 23px 40px 97px -159px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 23px 40px 97px -159px rgba(0,0,0,0.75);
+    box-shadow: inset 23px 40px 97px -159px rgba(0,0,0,0.75);
+}
+
+
+/* Estilos de la barra de progreso */
+
+.progress p {
+    color: white;
+    font-size: larger;
+    padding: 12px;
+    padding-top: 5px;
+}
+
+.pro-carga1{
+    animation: carga1 3s normal forwards;
+    border-radius: 50px;
+    background-color: #23a46c;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes carga1 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+.pro-carga2{
+    animation: carga2 3s normal forwards;
+    border-radius: 50px;
+    background-color: #23a46c;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes carga2 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 62%;
+    }
+}
+.pro-carga3{
+    animation: carga3 3s normal forwards;
+    border-radius: 50px;
+    background-color: #23a46c;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes carga3 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 57%;
+    }
+}
+.pro-carga4{
+    animation: carga4 3s normal forwards;
+    border-radius: 50px;
+    background-color: #23a46c;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes carga4 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 71%;
+    }
+}
+.pro-carga5{
+    animation: carga5 3s normal forwards;
+    border-radius: 50px;
+    background-color: #23a46c;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes carga5 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+
+.bt2 {
+    position: relative;
+    display: inline-block;
+    height: 55px;
+    width: 128px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #23a46c;
+    font-weight: lighter;
+    font-size: 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    z-index: 1;
+}
+
+/* Capa animada */
+.bt2 {
+    height: 55px;
+    width: 128px;
+    background-color:#23a46c;
+    color: white;
+    border: 2px solid #23a46c;
+    font-weight: lighter;
+}
+
+.bt2:hover {
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.bt3 {
+    position: relative;
+    display: inline-block;
+    height: 55px;
+    width: 128px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #23a46c;
+    font-weight: lighter;
+    font-size: 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    z-index: 1;
+}
+
+/* Capa animada */
+.bt3 {
+    height: 55px;
+    width: 128px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #23a46c;
+    font-weight: lighter;
+}
+
+.bt3:hover {
+    background-color: #23a46c;
+    transition: 0.5s;
+}
+
+
+/* Estilos del proyectos */
+
+.card a{
+    color: Black !important;
+    text-decoration: none;
+}
+
+.card {
+    border: none;
+    outline: none;
+
+    -webkit-box-shadow: -3px 14px 185px -82px rgba(255,255,255,1);
+    -moz-box-shadow: -3px 14px 185px -82px rgba(255,255,255,1);
+    box-shadow: -3px 14px 185px -82px rgba(255,255,255,1);
+}
+
+.card p{
+    color: #23a46c;
+}
+
+.circle {
+    height: 70px;
+    width: 70px;
+    background-color: lightgrey;
+    color: black;
+    padding: 12px;
+    display: inline-block;
+    font-size: 30px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+
+.card:hover .circle {
+    background-color: #23a46c;
+    color: white;
+    transition: 0.5s;
+}
+
+
+
+/* Estilos del contacto */
+
+
+.circle:hover {
+    background-color: #23a46c;
+    color: white;
+    transition: 0.4s;
+}
+
+textarea {
+    resize: none;
+}
+
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color:  #23a46c;
+    
+}
